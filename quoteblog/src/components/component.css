@@ -1,0 +1,342 @@
+#chatting-page {
+  background-image: url("https://images.unsplash.com/photo-1509114397022-ed747cca3f65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  animation-name: movingBackground;
+  animation-iteration-count: infinite;
+  animation-duration: 33s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 92vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+#chatting-page-dark {
+  background-color: black;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 92vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+#chatting-page-dark #chatting-body p {
+  background-color: rgb(69, 69, 69);
+  color: rgb(201, 200, 200);
+}
+
+#chatting-page-dark #chatting-header {
+  background-color: rgb(69, 69, 69);
+  color: rgb(159, 159, 159);
+}
+
+#chatting-page-dark #chatting-send {
+  background-color: rgb(69, 69, 69);
+  color: rgb(159, 159, 159);
+}
+
+#chatting-page-dark #chatting-input {
+  border: 2px solid rgb(69, 69, 69);
+  color: rgb(159, 159, 159);
+}
+
+#chat-list {
+  background-image: url("https://images.unsplash.com/photo-1509114397022-ed747cca3f65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-blend-mode: hue; */
+  height: 92vh;
+}
+
+.hideScrollbars::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hideScrollbars {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+#time-span {
+  display: block;
+  text-align: end;
+  font-size: 7px;
+  color: wheat;
+}
+
+#chat-back-button {
+  border-radius: 50%;
+  padding: 2px;
+  transition-duration: 0.3s;
+}
+
+#chat-back-button:hover {
+  transform: scale(1.2);
+}
+
+#chatting-body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  height: 80%;
+  width: 100%;
+  padding: 1%;
+
+  background-color: transparent;
+}
+
+@keyframes movingBackground {
+  0% {
+    background-position: 5% 50%;
+  }
+  50% {
+    background-position: 30% 30%;
+  }
+  100% {
+    background-position: 50% 5%;
+  }
+}
+
+#last-message {
+  margin-top: 30px;
+  margin-left: -60px;
+  overflow: hidden;
+  color: rgb(221, 190, 190);
+  font-size: small;
+  font-family: cursive;
+}
+
+.msg-left {
+  overflow-wrap: break-word;
+  color: aliceblue;
+  background-color: #6c0d30;
+  border-radius: 0 5px 5px 5px;
+  box-shadow: 4px 4px 6px black;
+  max-width: 65%;
+  width: fit-content;
+  padding: 5px;
+  font-size: medium;
+  font-weight: lighter;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.msg-right {
+  overflow-wrap: break-word;
+  color: aliceblue;
+  border-radius: 5px 0 5px 5px;
+  background-color: #3e061a;
+  box-shadow: -4px 4px 6px black;
+  max-width: 65%;
+  width: fit-content;
+  margin-left: auto;
+  padding: 5px;
+  font-weight: lighter;
+  font-size: medium;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+#chats-body {
+  overflow: scroll;
+  height: 100%;
+  width: 100%;
+  padding: 1%;
+}
+
+#chats-body > ul > li {
+  color: aliceblue;
+  background-color: #ca1255cb;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: large;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#chats-body > ul > li:hover {
+  background-color: #911140b3;
+  box-shadow: 2px 2px 5px rgb(44, 41, 41);
+}
+
+#chatting-header {
+  box-shadow: 0 5px 10px rgb(66, 61, 61);
+  position: relative;
+  background-color: #971243;
+  text-align: left;
+  height: 10%;
+  /* padding-left: 5px; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+#chatting-header > div {
+  color: rgba(255, 255, 255, 0.864);
+  font-weight: bolder;
+  font-family: Geneva;
+  margin-left: 10px;
+}
+
+#chatting-bottom {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1%;
+  background-color: transparent;
+}
+
+#chatting-input {
+  resize: none;
+  font-size: large;
+  /* padding-left: 10px; */
+  background-color: #000000;
+  border: 0;
+  border-radius: 20px 0 0 20px;
+  width: 80%;
+  margin-left: 1%;
+  transition-duration: 0.4s;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+
+#chatting-send {
+  border: 0;
+  background-color: #971243;
+  color: white;
+  border-radius: 0 20px 20px 0;
+  width: 18%;
+  margin-right: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.4s;
+}
+#chatting-emoji {
+  border: 0;
+  background-color: #971243;
+  color: white;
+  border-radius: 20px 0 0 20px;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.4s;
+  margin-right: 5px;
+}
+
+#chatting-send:hover {
+  background-color: #62092a;
+}
+
+#chatting-emoji : {
+  background-color: #62092a;
+}
+
+#chatting-send > h3:hover {
+  transform: translate(3px, 0);
+  color: aliceblue;
+}
+
+#clearChat {
+  /* background-color: #ae5c7a; */
+  display: "inline";
+  width: fit-content;
+  margin-left: 5px;
+  float: right;
+  padding: 4px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+#clearChat:hover {
+  color: black;
+}
+
+@media screen and (max-width: 480px) {
+  #chats-body > ul > li {
+    margin: 5px;
+    border-radius: 5px;
+    font-size: small;
+  }
+  /* #chatting-page {
+    margin-top: 5px;
+    padding: 0;
+  } */
+
+  .msg-left {
+    font-size: small;
+  }
+
+  #chats-body {
+    padding: 0;
+  }
+
+  #chatting-header {
+    border-top: 2px solid black;
+  }
+
+  /* #chatting-bottom {
+padding: 0;
+    margin-bottom: 2px;
+    background-color: #000000;
+  } */
+
+  .msg-right {
+    font-size: small;
+  }
+
+  #chatting-send {
+    border: 0;
+    background-color: #971243;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    width: 19%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.4s;
+  }
+
+  #chatting-emoji {
+    border: 0;
+    background-color: #971243;
+    color: white;
+    border-radius: 5px 0 0 5px;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.4s;
+    margin-right: 3px;
+  }
+
+  #chatting-input {
+    -size: small;
+    padding-left: 5px;
+  }
+}

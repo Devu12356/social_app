@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+.QuoteApppp {
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1509114397022-ed747cca3f65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-position: 50% 5%; */
+  background-color: black;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  animation-name: movingBackground;
+  animation-iteration-count: infinite;
+  animation-duration: 33s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes movingBackground {
+  0% {
+    background-position: 5% 50%;
+  }
+  50% {
+    background-position: 30% 30%;
+  }
+  100% {
+    background-position: 50% 5%;
+  }
+}
+
+.emoji-picker-react input.emoji-search {
+  background-color: #da7c9e;
+  /* font-size: smaller; */
+  color: white;
+  font-family: cursive;
+  transition-duration: 0.2s;
+  margin-bottom: 3px;
+}
+
+.emoji-picker-react input.emoji-search:focus {
+  border: 1px solid black;
+  background-color: #c23f6f;
+  border-radius: 15px;
+  border: 0;
+}
+
+.body-img {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  filter: blur(1px);
+  z-index: -1;
+}
+
+#newPost {
+  background-color: white;
+  transition-duration: 0.2s;
+}
+
+#profile-headers ul {
+  list-style: none;
+  margin-right: 20px;
+  padding: 0;
+  display: inline-flex;
+}
+
+#profile-headers li {
+  display: inline;
+}
+
+#fullPage {
+  min-height: 100vh;
+}
+
+#logo-text {
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+}
+
+#newPost:hover {
+  transform: scale(1.1);
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  background-color: #00000086;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: -120px;
+  padding: 43% 0;
+}
+
+.custom-file-upload-newpost {
+  color: #971243;
+  border: 1px solid #971243;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+#post-uploader {
+  width: 50px;
+  height: 50px;
+}
+
+#topper {
+  display: none;
+}
+.react-icons {
+  color: white;
+  font-size: 150%;
+}
+
+#quote-logo {
+  margin-left: 10000px;
+  transition-duration: 0.5s;
+  width: 100%;
+  transition-timing-function: ease-in-out;
+}
+
+Form {
+  position: relative;
+  padding: 2%;
+  border-radius: 10px;
+  width: 70%;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  filter: saturate(80%);
+  top: 10%;
+  /* background-color: whitesmoke; */
+}
+
+.profile-dp {
+  margin-top: 2%;
+  width: 100px;
+  height: 100px;
+}
+
+.inputBtn {
+  background-color: #971243;
+  color: white;
+  border-radius: 0 10px 10px 0;
+}
+
+.uploadForm {
+  cursor: pointer;
+  color: white;
+  background-color: #971243;
+}
+
+.uploadFormBody {
+  color: white;
+  background-color: #971243;
+}
+
+.status {
+  display: none;
+  z-index: 1;
+  position: fixed;
+  right: 4%;
+  bottom: 4%;
+  border-radius: 50%;
+  transition-duration: 0.3s;
+  box-shadow: 5px 5px 10px black;
+}
+.status:hover {
+  transform: scale(1.1) rotateZ(135deg);
+}
+
+.Accor {
+  width: 80%;
+}
+
+.accor-card {
+  margin: 0 auto;
+}
+
+.blockquote {
+  color: wheat;
+}
+
+.caption {
+  font-size: 90%;
+}
+.blockquote-footer {
+  color: wheat;
+}
+
+.card-img {
+  background-position: center;
+  background-size: cover;
+  max-height: 80vh;
+}
+
+.wrapper-image {
+  overflow: hidden;
+}
+
+.card-img {
+  transition-duration: 0.2s;
+}
+
+.card-img:hover {
+  transform: scale(1.15);
+  filter: blur(1);
+}
+
+.grid {
+  color: wheat;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.authPage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer {
+  text-align: center;
+  background-color: #971243;
+  padding: 1%;
+}
+
+.msgContent {
+  position: absolute;
+  bottom: 19px;
+  margin: 0;
+  padding: 0;
+  /* margin-left: 0;
+  padding: 0; */
+}
+#messageHistory {
+  text-align: end;
+  width: 100%;
+  margin-left: 3px;
+  padding: 0;
+}
+
+#messageHistory li {
+  text-align: right;
+  width: fit-content;
+  font-weight: bolder;
+  background-color: #971243;
+  color: white;
+  padding: 4px;
+  margin-bottom: 3px;
+  border-radius: 0 5px 5px 5px;
+  list-style: none;
+}
+#chatPage {
+  height: 100vh;
+  position: relative;
+}
+
+.footer-chat {
+  position: fixed;
+  bottom: 0;
+  background-color: aqua;
+  width: 100%;
+}
+
+.squareTop {
+  margin: 0 auto;
+}
+.square {
+  /* float: right; */
+  position: relative;
+  width: 100%;
+  margin: 0;
+  background-color: #971243;
+}
+
+.square:after {
+  margin: 0;
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+#diplayNone {
+  display: none;
+}
+
+.content {
+  background-color: #971243;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+  border-radius: 2px;
+  height: 30px;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+  * {
+    font-size: 98%;
+  }
+
+  .msg-left {
+    font-size: small;
+  }
+
+  .msg-right {
+    font-size: small;
+  }
+
+  #post-uploader {
+    width: 35px;
+    height: 35px;
+  }
+
+  .profile-dp {
+    width: 70px;
+    height: 70px;
+  }
+  .card-img {
+    max-height: 70vh;
+  }
+  .status {
+    display: block;
+  }
+  #newPost {
+    display: none;
+  }
+  Form {
+    width: 100%;
+    border: 0;
+  }
+  .grid {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  Form {
+    width: 75%;
+    margin-left: 0 auto;
+  }
+  .grid {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
